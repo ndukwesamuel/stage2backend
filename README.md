@@ -14,22 +14,22 @@ The API functionalities :
 
 Developers who are interested in using this API should have node installed on their local machines if not already installed.
 
-- Live url `https://nameapi-eqdw.onrender.com/api`
+- Live url `https://hngbackend-68zl.onrender.com/api`
 
 ### Clone the repository
 
 ```
-git clone https://github.com/LivingHopeDev/nameAPI
+git clone https://github.com/ndukwesamuel/stage2backend
 
 ```
 
 - move into the cloned directory
 
 ```
-cd nameAPI
+cd stage2backend
 ```
 
-To install all dependencies, run `npm install`
+To install all dependencies, run `yarn install`
 
 ### Configuration
 
@@ -63,21 +63,15 @@ Returns a list of names and their respective id with a success status .
 Sample: `http://127.0.0.1:5000/api/`
 
 ```
-
 {
-"status": "Success",
-"message": [
-{
-"_id": "64ffe09dc23fec307969a212",
-"name": "Adetayo Adewobi",
-"__v": 0
-},
-{
-"_id": "64ffed9d2caf77a938b0e6c4",
-"name": "Oluwatosin",
-"__v": 0
-}
-]
+    "count": 1,
+    "Persons": [
+        {
+            "_id": "6503e1bb0ac83df5d92325ff",
+            "name": "sam",
+            "__v": 0
+        }
+    ]
 }
 
 ```
@@ -91,14 +85,9 @@ sample: `http://127.0.0.1:5000/api/64ffe09dc23fec307969a212`
 ```
 
 {
-{
-"status": "Success",
-"message": {
-"_id": "64ffe09dc23fec307969a212",
-"name": "Adetayo Adewobi",
-"__v": 0
-}
-}
+    "_id": "6503e1bb0ac83df5d92325ff",
+    "name": "emeka",
+    "__v": 0
 }
 
 ```
@@ -119,8 +108,11 @@ sample: `http://127.0.0.1:5000/api`
 ```
 
 {
-"status": "Success",
-"message": "Data saved"
+    "newperson": {
+        "name": "John",
+        "_id": "6503e2cc0ac83df5d9232605",
+        "__v": 0
+    }
 }
 
 ```
